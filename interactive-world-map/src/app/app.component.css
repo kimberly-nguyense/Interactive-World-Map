@@ -13,8 +13,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.left-col{
+    margin: 0 5% 5%;
+    padding-bottom: 5%;
     height: 100%;
 }
-  
+.search{
+    max-width: 340px;
+}

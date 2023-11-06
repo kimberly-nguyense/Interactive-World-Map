@@ -1,5 +1,4 @@
-import { NgFor } from '@angular/common';
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-map',
@@ -8,7 +7,6 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class MapComponent implements OnInit{
   @Output() clicked = new EventEmitter<string>();
-  countryID!: string
 
   ngOnInit(): void {
     this.addClickEvents();
@@ -19,10 +17,7 @@ export class MapComponent implements OnInit{
     for(let i=0; i<allPaths.length; i++){
       let path = allPaths[i];
       path.addEventListener("click", () => {
-        document.querySelector("#"+this.countryID)?.removeAttribute('selected');
-        this.countryID = path.id;
-        document.querySelector("#"+this.countryID)?.setAttribute('selected','');
-        this.clicked.emit(this.countryID)
+        this.clicked.emit(path.id)
       })
     }
   }
