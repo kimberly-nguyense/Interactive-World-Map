@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-2">
+      <div class="row left-col">
+        <div class="col-6 col-md-12 heading">
+          <h1>{{title}}</h1>
+        </div>
+        <div class="col-6 col-md-12 info">
+          <app-info [countryInfo]="countryInfo"></app-info>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-10 map">
+      <app-map (clicked)="onCountry($event)"></app-map>
+    </div>
+  </div>
+</div>
