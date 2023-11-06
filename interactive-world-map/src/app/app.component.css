@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    justify-content: center;
+    min-width: 1050px;
+    padding: 5%;
+}
+.heading{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+    padding-top: 50px;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-col{
+    height: 100%;
+}
+  
