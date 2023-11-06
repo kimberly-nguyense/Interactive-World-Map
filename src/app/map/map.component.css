@@ -1,9 +1,0 @@
-path{
-    fill: rgb(255, 191, 0);
-}
-path:hover{
-    fill: rgb(111, 0, 255);
-}
-path[selected]{
-    fill:green;
-}
