@@ -1,23 +1,16 @@
 <div class="container">
   <div class="row">
-    <div class="col-12 col-md-3">
-      <div class="row info">
-        <div class="col-6 col-md-12">
-          <div class="row">
-            <div class="col-12 py-5">
-              <h1>{{title}}</h1>
-            </div>
-            <div class="col-12 search">
-              <app-search-bar (searched)="onCountry($event)"></app-search-bar>
-            </div>
-          </div>
+    <div class="col-12 col-md-2">
+      <div class="row left-col">
+        <div class="col-6 col-md-12 heading">
+          <h1>{{title}}</h1>
         </div>
-        <div class="col-6 col-md-12 py-md-5">
+        <div class="col-6 col-md-12 info">
           <app-info [countryInfo]="countryInfo"></app-info>
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-9 map">
+    <div class="col-6 col-md-10 map">
       <app-map (clicked)="onCountry($event)"></app-map>
     </div>
   </div>
