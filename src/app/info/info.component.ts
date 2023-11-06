@@ -7,7 +7,5 @@ import { CountryInfo } from '../country-info';
   styleUrls: ['./info.component.css']
 })
 export class InfoComponent {
-  Object = Object;
-  @Input()
-  countryInfo: CountryInfo | undefined;
+  @Input() countryInfo: CountryInfo | undefined;
 }
