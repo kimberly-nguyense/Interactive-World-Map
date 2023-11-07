@@ -1,27 +1,26 @@
 # InteractiveWorldMap
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+# Summary
+This project uses Angular and the World Bank API to create an interactive world map. Clicking a country on the map or searching a country code in the search bar will emit the country code value to the root app component. The root app component will use a combination of property and data binding to update the country code value and then request the country details using the worldbank service. Finally, the info component will display the country details.
 
-## Development server
+# Screenshots
+## Initial app
+![image](https://github.com/kimberly-nguyense/project-interactive-world-map/assets/128512024/8ccc2ad9-74bc-4ece-a4c8-aacdea248a6b)
+## Clicking a Country on the Map Component
+![image](https://github.com/kimberly-nguyense/project-interactive-world-map/assets/128512024/ed6ae6cf-bf87-48d6-b501-5c62e64f0d45)
+## Searching a Country Code on the Search Bar Component
+![image](https://github.com/kimberly-nguyense/project-interactive-world-map/assets/128512024/ac1b4057-026d-4f27-84be-705114f979a8)
+## Hovering over a Country on the Map Component
+![image](https://github.com/kimberly-nguyense/project-interactive-world-map/assets/128512024/25f68e38-242f-4a18-9826-a5a82f31c2ed)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# How to Use
+1. Download the ZIP file
+2. CD into the angular app directory (ex: C:\Users\Kim\Downloads\project-interactive-world-map-main`
+3. Enter `npm install` in the command line to install the '@angular-devkit/build-angular:dev-server' builder's node package.
+4. Enter `ng serve -o` in the command line to build, deploy, and serve the app locally.
+5. The local app should open in your browser. If not, go to `http://localhost:4200/interactive-world-map/` in your browser.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Resources
+[Free World SVG Map](https://mapsvg.com/maps/world)
+[The World Bank Country API](https://api.worldbank.org/v2/country/?format=json)
+[The World Bank Country API Queries - docs](https://datahelpdesk.worldbank.org/knowledgebase/articles/898590-country-api-queries)
