@@ -9,7 +9,7 @@ export class WorldbankService {
   constructor(private httpclient: HttpClient) { }
 
   getCountry(countryID: string){
-    return this.httpclient.get('http://api.worldbank.org/v2/country/'+countryID+'?format=json',
+    return this.httpclient.get('https://api.worldbank.org/v2/country/'+countryID+'?format=json',
       {responseType:'json',observe:'response'})
   }
 }
