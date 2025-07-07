@@ -27,7 +27,7 @@ The application architecture follows Angular best practices:
 - SVG for vector map representation
 
 ## Live Demo
-View the live application: [Interactive World Map](https://kimberly-nguyense.github.io/project-interactive-world-map/)
+View the live application: [Interactive World Map](https://kimberly-nguyense.github.io/interactive-world-map/)
 
 ## Development Setup
 To run the application locally:
